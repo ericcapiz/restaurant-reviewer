@@ -176,5 +176,3 @@ const RestaurantsList = props => {
   };
   
   export default RestaurantsList;
-
-  //1hr 40min mark
