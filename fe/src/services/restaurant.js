@@ -2,7 +2,7 @@ import API from '../util/api.js'
 
 class RestaurantDataService {
     getAll(page = 0 ){
-        return API.get(`?page=${page}`);
+        return API.get(`restaurants?page=${page}`);
     }
 
     get(id){
@@ -10,7 +10,7 @@ class RestaurantDataService {
     }
 
     find(query, by = "name", page = 0){
-        return API.get(`?${by}=${query}&${page}`)
+        return API.get(`restaurants?${by}=${query}&${page}`)
     }
 
     createReview(data){
